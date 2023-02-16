@@ -5,10 +5,9 @@ npm i axios
 # API used
 https://api.nasa.gov/
 
-# To run the app, run:
+# To run the app
+```JavaScript
 npm install
 npm run dev
 
-# Photos Credit
-From Unplash
-Edited with Adobe Photoshop
+```
