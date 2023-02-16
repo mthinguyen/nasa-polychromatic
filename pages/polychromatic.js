@@ -78,7 +78,7 @@ export default function Polychromatic() {
 
                     {/* Earth and Gru */}
                     <div className={styles.earthGru}>
-                        <Image className={styles.earth} src={image} alt={image} width={400} height={400} id={styles.imageId} />
+                        <Image className={styles.earth} src={image} alt={image} width={300} height={300} id={styles.imageId} />
                         <Image src="/gru-2.png" width="200" height="200" ></Image>
                     </div>
                     {/* End of Earth and Gru */}
