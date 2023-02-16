@@ -1,0 +1,178 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  background-image: url(/earth.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.nasaImage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  background-color: #67b0f548;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5pt;
+}
+
+.imageGrid>img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 5pt;
+}
+
+.header {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 40pt;
+  color: white;
+  font-weight: 700;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid #8fc3eb;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 1 auto;
+  /* Gives that scrolling effect as the typing happens */
+  margin-bottom: 4rem;
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+    typing 2.5s steps(22, end),
+    blink-caret 1s step-end infinite;
+}
+
+/* Typing Effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 35%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  10% {
+    border-color: #8fc3eb;
+  }
+}
+
+@keyframes flying {
+  from {
+    transform: translateY(0pt);
+  }
+
+  to {
+    transform: translateY(10pt);
+  }
+}
+
+
+.minionSpeech {
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16pt;
+  font-weight: 400;
+  color: rgb(18, 70, 126);
+}
+
+.speech {
+  background-color: #e6eff4;
+  padding: .5rem;
+  transition: 500ms;
+}
+
+.speech:hover {
+  transform: translateX(10pt);
+  box-shadow: 1pt 5pt 45pt #2c7ee8;
+}
+
+.minion {
+  animation: flying 1.5s linear infinite;
+  animation-direction: alternate;
+}
+
+.earthGru {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.earth {
+  animation: flying 1.5s linear infinite;
+  animation-direction: alternate;
+  margin: 2rem;
+}
+
+.currentInfo {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16pt;
+  font-weight: 400;
+  color: #1158ae;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  line-height: 28pt;
+  background-color: #eaf1f5;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  color:black;
+  display: inline;
+  padding: 7pt 35pt;
+  background: white;
+  font-size: 12pt;
+  font-family: 'Roboto Mono', monospace;
+  color: #173679;
+  border: 2pt solid #173679;
+  transition: all .4s;
+  cursor: pointer;
+  animation-fill-mode: backwards;
+} 
+
+.button:hover {
+  transform: translateY(-3pt);
+  box-shadow: 3pt 3pt 20pt #2c7ee8; 
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+  .content {
+    padding: 4rem;
+  }
+
+}
