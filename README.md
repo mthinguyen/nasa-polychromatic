@@ -1,6 +1,8 @@
 # Installation
+```JavaScript
 npx create-next-app
 npm i axios
+```
 
 # API used
 https://api.nasa.gov/
