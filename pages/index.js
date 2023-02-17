@@ -8,9 +8,13 @@ import axios from 'axios';
 
 export default function Home() {
 
+  // require('dotenv').config(); 
+
   const [data, setData] = useState();
 
-  const apiKey = process.env.API_KEY;
+  const apiKey = process.env.API_KEY
+  // Use apiKey to make API calls
+  
   const url = `https://api.nasa.gov/techtransfer/patent/?q=10&engine&api_key=${apiKey}`;
   const getTechTransferData = async () => {
     const res = await axios.get(url);
